@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF-EX-QLTT", "EF-EX-QLTT.csproj", "{D46C4F46-0331-421B-A637-284AA93E7ADE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D46C4F46-0331-421B-A637-284AA93E7ADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D46C4F46-0331-421B-A637-284AA93E7ADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D46C4F46-0331-421B-A637-284AA93E7ADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D46C4F46-0331-421B-A637-284AA93E7ADE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23BF9960-AF05-40AF-952E-87A74BB348C1}
+	EndGlobalSection
+EndGlobal

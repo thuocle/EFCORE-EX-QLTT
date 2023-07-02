@@ -14,10 +14,10 @@ namespace EF_EX_QLTT.IServices
         //Hiển thị danh sách những học viên sinh năm 2002 và có tên chứa "An"
         void DSTheoNamSinhVaTen();
         //Thêm mới 1 học viên
-        void ThemHV(HocVien hv, int lopID);
+        void ThemHV(HocVien hv);
         //Cập nhật thông tin học viên
         void CapNhatHV(int hvID);
         //Xóa học viên
-        void XOaHV(int hvID);
+        void XoaHV(int hvID);
     }
 }

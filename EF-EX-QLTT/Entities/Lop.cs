@@ -9,7 +9,7 @@ namespace EF_EX_QLTT.Entities
     public class Lop
     {
         public int LopID { get; set; }
-        public int TenLop { get; set; }
+        public string TenLop { get; set; }
         IEnumerable<Lop> LopList { get; set; }
     }
 }

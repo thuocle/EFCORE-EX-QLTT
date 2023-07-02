@@ -7,7 +7,10 @@ using System.Threading.Tasks;
 
 namespace EF_EX_QLTT.Helper
 {
-
+    public enum inputType
+    {
+        HoTen,NgaySinh,GioiTinh,Email, SDT, DiaChi,TrinhDo,NgayDK
+    }
     public class InputHelper
     {
         public static bool InputSTR(string STR, int minLenght, int maxLength)
@@ -24,7 +27,7 @@ namespace EF_EX_QLTT.Helper
             {
                 return false;
             }
-            if(!InputSTR(hv.SDT, 10, 15))
+            if(!InputSTR(hv.SDT, 9, 15))
             {
                 return false;
             }
@@ -33,6 +36,44 @@ namespace EF_EX_QLTT.Helper
                 return false;
             }
             return true;
+        }
+        public static int InputINT(string msg, string err)
+        {
+            bool check = true;
+            int ret;
+            do
+            {
+                Console.WriteLine(msg);
+                check = int.TryParse(Console.ReadLine(), out ret);
+                if (!check) Console.WriteLine(err);
+            } while (!check);
+            return ret;
+        }
+        public static string InputSTRING(string msg, string err, int minLength = 0, int maxLength = int.MaxValue)
+        {
+            bool check = true;
+            string ret;
+            do
+            {
+                Console.WriteLine(msg);
+                ret = Console.ReadLine();
+                check = ret.Length >= minLength && ret.Length <= maxLength;
+                if (!check) Console.WriteLine(err);
+            } while (!check);
+            return ret;
+        }
+        public static DateTime InputDATETIME(string msg, string err, DateTime minDate, DateTime maxDate)
+        {
+            bool check = true;
+            DateTime ret;
+            do
+            {
+                Console.WriteLine(msg);
+                check = DateTime.TryParse(Console.ReadLine(), out ret);
+                check = check && ret >= minDate && ret <= maxDate;
+                if (!check) Console.WriteLine(err);
+            } while (!check);
+            return ret;
         }
     }
 }

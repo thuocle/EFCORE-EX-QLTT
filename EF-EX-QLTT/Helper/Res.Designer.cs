@@ -79,6 +79,124 @@ namespace EF_EX_QLTT.Helper {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Khong duoc de trong, dinh dang phai hop le.
+        /// </summary>
+        internal static string ErrBatBuocHopLe {
+            get {
+                return ResourceManager.GetString("ErrBatBuocHopLe", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email: bắt buộc, từ 10-100 kí tự.
+        /// </summary>
+        internal static string ErrEmail {
+            get {
+                return ResourceManager.GetString("ErrEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ho ten bắt buộc, từ 6-50 kí tự.
+        /// </summary>
+        internal static string ErrHoten {
+            get {
+                return ResourceManager.GetString("ErrHoten", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ngsinh bắt buộc.
+        /// </summary>
+        internal static string ErrNgsinh {
+            get {
+                return ResourceManager.GetString("ErrNgsinh", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SĐT: bắt buộc, từ 10-15 kí tự.
+        /// </summary>
+        internal static string ErrSDT {
+            get {
+                return ResourceManager.GetString("ErrSDT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nhap DiaChi:.
+        /// </summary>
+        internal static string InDC {
+            get {
+                return ResourceManager.GetString("InDC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nhap NgayDK:.
+        /// </summary>
+        internal static string InDK {
+            get {
+                return ResourceManager.GetString("InDK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nhap Email:.
+        /// </summary>
+        internal static string InEmail {
+            get {
+                return ResourceManager.GetString("InEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nhap Gioi Tinh:.
+        /// </summary>
+        internal static string InGT {
+            get {
+                return ResourceManager.GetString("InGT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nhap ID Lop:
+        ///.
+        /// </summary>
+        internal static string InLop {
+            get {
+                return ResourceManager.GetString("InLop", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nhap NgaySinh.
+        /// </summary>
+        internal static string InNgsinh {
+            get {
+                return ResourceManager.GetString("InNgsinh", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nhap ho ten:.
+        /// </summary>
+        internal static string inputHoten {
+            get {
+                return ResourceManager.GetString("inputHoten", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nhap SDT:.
+        /// </summary>
+        internal static string InSDT {
+            get {
+                return ResourceManager.GetString("InSDT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Thuc hien thanh cong!.
         /// </summary>
         internal static string ThanhCong {

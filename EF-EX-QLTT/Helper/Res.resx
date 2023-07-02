@@ -123,6 +123,46 @@
   <data name="DanhSachTrong" xml:space="preserve">
     <value>Danh Sach Trong!</value>
   </data>
+  <data name="ErrBatBuocHopLe" xml:space="preserve">
+    <value>Khong duoc de trong, dinh dang phai hop le</value>
+  </data>
+  <data name="ErrEmail" xml:space="preserve">
+    <value>Email: bắt buộc, từ 10-100 kí tự</value>
+  </data>
+  <data name="ErrHoten" xml:space="preserve">
+    <value>Ho ten bắt buộc, từ 6-50 kí tự</value>
+  </data>
+  <data name="ErrNgsinh" xml:space="preserve">
+    <value>Ngsinh bắt buộc</value>
+  </data>
+  <data name="ErrSDT" xml:space="preserve">
+    <value>SĐT: bắt buộc, từ 10-15 kí tự</value>
+  </data>
+  <data name="InDC" xml:space="preserve">
+    <value>Nhap DiaChi:</value>
+  </data>
+  <data name="InDK" xml:space="preserve">
+    <value>Nhap NgayDK:</value>
+  </data>
+  <data name="InEmail" xml:space="preserve">
+    <value>Nhap Email:</value>
+  </data>
+  <data name="InGT" xml:space="preserve">
+    <value>Nhap Gioi Tinh:</value>
+  </data>
+  <data name="InLop" xml:space="preserve">
+    <value>Nhap ID Lop:
+</value>
+  </data>
+  <data name="InNgsinh" xml:space="preserve">
+    <value>Nhap NgaySinh</value>
+  </data>
+  <data name="inputHoten" xml:space="preserve">
+    <value>Nhap ho ten:</value>
+  </data>
+  <data name="InSDT" xml:space="preserve">
+    <value>Nhap SDT:</value>
+  </data>
   <data name="ThanhCong" xml:space="preserve">
     <value>Thuc hien thanh cong!</value>
   </data>

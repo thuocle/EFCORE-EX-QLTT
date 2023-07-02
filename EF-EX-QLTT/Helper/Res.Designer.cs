@@ -197,6 +197,15 @@ namespace EF_EX_QLTT.Helper {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Nhap TrinhDo:.
+        /// </summary>
+        internal static string InTrinhDo {
+            get {
+                return ResourceManager.GetString("InTrinhDo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Thuc hien thanh cong!.
         /// </summary>
         internal static string ThanhCong {

@@ -163,6 +163,9 @@
   <data name="InSDT" xml:space="preserve">
     <value>Nhap SDT:</value>
   </data>
+  <data name="InTrinhDo" xml:space="preserve">
+    <value>Nhap TrinhDo:</value>
+  </data>
   <data name="ThanhCong" xml:space="preserve">
     <value>Thuc hien thanh cong!</value>
   </data>

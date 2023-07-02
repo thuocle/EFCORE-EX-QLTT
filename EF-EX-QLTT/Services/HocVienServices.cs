@@ -23,14 +23,14 @@ namespace EF_EX_QLTT.Services
 
         public void DSLopTheoNgayDK()
         {
-            if(dbConText.HocVien.Count() == 0)
+            if (dbConText.HocVien.Count() == 0)
             {
                 Console.WriteLine(Res.DanhSachTrong);
                 Console.ReadKey();
                 return;
             }
-            var lstHV = dbConText.HocVien.OrderBy(x => x.NgayDK);
-                if(lstHV.Count() == 0 )
+            int lstHV = dbConText.HocVien.OrderBy(x => x.NgayDK).ToList().Count();
+            if (lstHV == 0)
             {
                 Console.WriteLine(Res.DanhSachTrong);
                 Console.ReadKey();
@@ -38,7 +38,7 @@ namespace EF_EX_QLTT.Services
             }
             else
             {
-                lstHV.ToList().ForEach(x => x.HienThi());
+                dbConText.HocVien.OrderBy(x => x.NgayDK).ToList().ForEach(x => x.HienThi());
             }
         }
 
@@ -50,8 +50,8 @@ namespace EF_EX_QLTT.Services
                 Console.ReadKey();
                 return;
             }
-            var lstHV = dbConText.HocVien.Where(x => x.NgaySinh.Year == 2000 && x.HoTen.Contains("An"));
-                if(lstHV.Count() == 0)
+            int lstHV = dbConText.HocVien.Where(x => x.NgaySinh.Year == 2002 && x.HoTen.Contains("An")).ToList().Count();
+                if(lstHV == 0)
             {
                 Console.WriteLine(Res.DanhSachTrong);
                 Console.ReadKey();
@@ -59,7 +59,7 @@ namespace EF_EX_QLTT.Services
             }
             else
             {
-                lstHV.ToList().ForEach(x => x.HienThi());
+                dbConText.HocVien.Where(x => x.NgaySinh.Year == 2002 && x.HoTen.Contains("An")).ToList().ForEach(x => x.HienThi());
             }
         }
 
@@ -92,7 +92,6 @@ namespace EF_EX_QLTT.Services
             {
                 Console.WriteLine("Hoc vien" + Res.TrungMa);
                 Console.WriteLine(Res.ThatBai);
-                return;
             }
         }
         public void CapNhatHV(int hvID)
@@ -119,7 +118,6 @@ namespace EF_EX_QLTT.Services
             {
                 Console.WriteLine("Hoc vien" + Res.ChuaTonTai);
                 Console.WriteLine(Res.ThatBai);
-                return;
             }
         }
         public void XoaHV(int hvID)
@@ -140,7 +138,6 @@ namespace EF_EX_QLTT.Services
             {
                 Console.WriteLine("Hoc vien" + Res.ChuaTonTai);
                 Console.WriteLine(Res.ThatBai);
-                return;
             }
         }
     }

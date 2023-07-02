@@ -31,7 +31,7 @@ void DoAction(char c)
             hocVienServices.DSTheoNamSinhVaTen();
             break;
         case '3':
-            hocVienServices.ThemHV(new HocVien());
+            hocVienServices.ThemHV(new HocVien(inputType.Them));
             break;
         case '4':
             Console.WriteLine("Nhap ID hoc vien muon cap nhat:");

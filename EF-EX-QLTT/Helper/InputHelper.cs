@@ -9,7 +9,7 @@ namespace EF_EX_QLTT.Helper
 {
     public enum inputType
     {
-        HoTen,NgaySinh,GioiTinh,Email, SDT, DiaChi,TrinhDo,NgayDK
+        Them
     }
     public class InputHelper
     {
